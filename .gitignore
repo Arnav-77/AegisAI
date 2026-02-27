@@ -65,7 +65,11 @@ desktop.ini
 *.pkl
 *.h5
 *.onnx
+# Ignore global models/ but allow our specific backend package
 models/
+!backend/malware/models/
+!backend/malware/models/*.pkl
+!backend/malware/models/*.sqlite
 checkpoints/
 
 # Audio/video files (test data)
